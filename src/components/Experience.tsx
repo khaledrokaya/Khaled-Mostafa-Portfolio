@@ -30,7 +30,7 @@ const Experience: React.FC = () => {
             </h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Professional journey in frontend development, delivering high-quality 
+              Professional journey in frontend development, delivering high-quality
               solutions and exceptional user experiences.
             </p>
           </div>
@@ -39,14 +39,14 @@ const Experience: React.FC = () => {
           <div className="relative">
             {/* Timeline Line */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200"></div>
-            
+
             {/* Experience Item */}
             <div className="relative flex items-start">
               {/* Timeline Dot */}
               <div className="flex-shrink-0 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center shadow-lg z-10">
                 <Briefcase className="h-8 w-8 text-white" />
               </div>
-              
+
               {/* Content */}
               <div className="ml-8 flex-1">
                 <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
@@ -58,7 +58,7 @@ const Experience: React.FC = () => {
                     <h4 className="text-xl text-blue-600 font-semibold mb-4">
                       {experience.company}
                     </h4>
-                    
+
                     {/* Meta Information */}
                     <div className="flex flex-wrap gap-4 text-gray-600 mb-4">
                       <div className="flex items-center">
@@ -98,27 +98,6 @@ const Experience: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Call to Action */}
-          <div className="mt-16 text-center">
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8">
-              <h4 className="text-xl font-semibold text-gray-900 mb-4">
-                Ready to Work Together?
-              </h4>
-              <p className="text-gray-600 mb-6">
-                I'm always excited to take on new challenges and collaborate on innovative projects.
-              </p>
-              <button
-                onClick={() => {
-                  const element = document.getElementById('contact');
-                  if (element) element.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300"
-              >
-                Let's Connect
-              </button>
             </div>
           </div>
         </div>

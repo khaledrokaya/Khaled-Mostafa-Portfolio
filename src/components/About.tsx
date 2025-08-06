@@ -43,35 +43,26 @@ const About: React.FC = () => {
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                 Passionate Front-End Developer
               </h3>
-              
+
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  I am a front-end web developer specializing in responsive, modern, and scalable 
-                  web applications using React, Angular, TypeScript, and Tailwind CSS. My work 
+                  I am a front-end web developer specializing in responsive, modern, and scalable
+                  web applications using React, Angular, TypeScript, and Tailwind CSS. My work
                   emphasizes clean code, strong user experience, and reliable performance.
                 </p>
-                
+
                 <p>
-                  I have experience developing complete systems, including e-commerce platforms, 
-                  admin dashboards, and management systems. I focus on building products that are 
-                  both easy to use and maintain, following best practices in design, development, 
+                  I have experience developing complete systems, including e-commerce platforms,
+                  admin dashboards, and management systems. I focus on building products that are
+                  both easy to use and maintain, following best practices in design, development,
                   and code structure for long-term quality.
                 </p>
-                
+
                 <p>
-                  Currently pursuing my Bachelor's degree in Computer Science at Tanta University 
-                  while actively working as an independent frontend developer, delivering high-quality 
+                  Currently pursuing my Bachelor's degree in Computer Science at Tanta University
+                  while actively working as an independent frontend developer, delivering high-quality
                   solutions to clients worldwide.
                 </p>
-              </div>
-
-              {/* Education Info */}
-              <div className="mt-8 p-6 bg-gray-50 rounded-lg">
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">Education</h4>
-                <div className="text-gray-700">
-                  <p className="font-medium">Bachelor's degree, Computer Science</p>
-                  <p className="text-sm">Tanta University (2022 - 2026)</p>
-                </div>
               </div>
             </div>
 

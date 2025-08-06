@@ -3,8 +3,8 @@ import { Badge } from '@/components/ui/badge';
 
 const Skills: React.FC = () => {
   const technicalSkills = [
-    { name: 'React.js', level: 'Expert', color: 'bg-blue-100 text-blue-800' },
-    { name: 'Angular', level: 'Advanced', color: 'bg-red-100 text-red-800' },
+    { name: 'React.js', level: 'Advanced', color: 'bg-blue-100 text-blue-800' },
+    { name: 'Angular', level: 'Basics', color: 'bg-red-100 text-red-800' },
     { name: 'TypeScript', level: 'Advanced', color: 'bg-blue-100 text-blue-800' },
     { name: 'JavaScript (ES6+)', level: 'Expert', color: 'bg-yellow-100 text-yellow-800' },
     { name: 'Tailwind CSS', level: 'Expert', color: 'bg-cyan-100 text-cyan-800' },
@@ -37,7 +37,7 @@ const Skills: React.FC = () => {
             </h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              A comprehensive overview of my technical expertise and soft skills 
+              A comprehensive overview of my technical expertise and soft skills
               that enable me to deliver exceptional web solutions.
             </p>
           </div>
@@ -48,7 +48,7 @@ const Skills: React.FC = () => {
               <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center lg:text-left">
                 Technical Skills
               </h3>
-              
+
               <div className="space-y-6">
                 {technicalSkills.map((skill, index) => (
                   <div key={index} className="group">
@@ -60,16 +60,17 @@ const Skills: React.FC = () => {
                         {skill.level}
                       </Badge>
                     </div>
-                    
+
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div
-                        className={`h-2 rounded-full transition-all duration-1000 ease-out ${
-                          skill.level === 'Expert' 
-                            ? 'bg-blue-600 w-full' 
-                            : skill.level === 'Advanced'
+                        className={`h-2 rounded-full transition-all duration-1000 ease-out ${skill.level === 'Expert'
+                          ? 'bg-blue-600 w-full'
+                          : skill.level === 'Advanced'
                             ? 'bg-blue-500 w-4/5'
-                            : 'bg-blue-400 w-3/5'
-                        }`}
+                            : skill.level === 'Basics'
+                              ? 'bg-blue-400 w-2/5'
+                              : 'bg-blue-400 w-3/5'
+                          }`}
                       ></div>
                     </div>
                   </div>
@@ -82,7 +83,7 @@ const Skills: React.FC = () => {
               <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center lg:text-left">
                 Soft Skills
               </h3>
-              
+
               <div className="grid grid-cols-1 gap-4">
                 {softSkills.map((skill, index) => (
                   <div
@@ -97,19 +98,6 @@ const Skills: React.FC = () => {
             </div>
           </div>
 
-          {/* Skills Summary */}
-          <div className="mt-16 text-center">
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h4 className="text-xl font-semibold text-gray-900 mb-4">
-                Always Learning & Growing
-              </h4>
-              <p className="text-gray-600 max-w-3xl mx-auto">
-                I'm constantly updating my skills and staying current with the latest 
-                technologies and best practices in web development. My goal is to deliver 
-                cutting-edge solutions that provide exceptional user experiences.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

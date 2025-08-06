@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
       title: 'Hope Givers – Charity Donation Platform',
       role: 'Front-End Developer',
       description: 'Hope Givers is a full-featured charity donation platform that connects verified charities with donors and individuals in need. It ensures transparent, secure, and impactful giving experiences.',
-      image: '/api/placeholder/600/400',
+      image: '/hope-givers.png',
       technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'Vite'],
       features: [
         { icon: <Layers className="h-4 w-4" />, text: 'SPA Architecture: Built as a modern Single Page Application using React + TypeScript' },
@@ -19,15 +19,15 @@ const Projects: React.FC = () => {
         { icon: <Shield className="h-4 w-4" />, text: 'Protected Routing: Secured access using React Router' },
         { icon: <Eye className="h-4 w-4" />, text: 'Intersection Observer: Optimized lazy-loading of content' }
       ],
-      liveDemo: 'https://hope-givers.com',
-      github: '#',
+      liveDemo: 'https://hope-givers.vercel.app/',
+      github: 'https://github.com/MAMAMIA282004/Advance_Se',
       color: 'from-blue-500 to-purple-600'
     },
     {
       title: 'Free Mentor – Free Online Course Aggregator',
       role: 'Front-End Developer',
       description: 'Free Mentor is a platform that curates the best free courses from Udemy and Coursera to help learners find high-quality educational content in one place.',
-      image: '/api/placeholder/600/400',
+      image: '/free-mentor.png',
       technologies: ['HTML', 'CSS', 'Bootstrap', 'Node.js'],
       features: [
         { icon: <Code className="h-4 w-4" />, text: 'Course Filtering: Easily find suitable courses using filters like difficulty level, duration, and topic' },
@@ -35,8 +35,8 @@ const Projects: React.FC = () => {
         { icon: <Palette className="h-4 w-4" />, text: 'Fully Responsive: Optimized for all devices—desktop, tablet, and mobile' },
         { icon: <Zap className="h-4 w-4" />, text: 'Continuously Updated: Course library is regularly updated to ensure access to the latest resources' }
       ],
-      liveDemo: 'https://free-mentor.com',
-      github: '#',
+      liveDemo: 'https://freementor.onrender.com/',
+      github: 'https://github.com/khaledrokaya/FreeMentor',
       color: 'from-green-500 to-teal-600'
     }
   ];
@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
             </h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Showcase of my recent work, demonstrating expertise in modern web technologies 
+              Showcase of my recent work, demonstrating expertise in modern web technologies
               and user-centered design principles.
             </p>
           </div>
@@ -62,25 +62,38 @@ const Projects: React.FC = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={`grid lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
-                }`}
+                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
+                  }`}
               >
                 {/* Project Image */}
                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                   <div className="relative group">
                     <div className={`absolute inset-0 bg-gradient-to-r ${project.color} rounded-lg transform rotate-3 group-hover:rotate-6 transition-transform duration-300`}></div>
                     <div className="relative bg-white rounded-lg shadow-xl overflow-hidden">
-                      <div className="aspect-video bg-gray-100 flex items-center justify-center">
-                        <div className={`w-24 h-24 bg-gradient-to-r ${project.color} rounded-full flex items-center justify-center`}>
-                          <Code className="h-12 w-12 text-white" />
+                      <div className="aspect-video bg-gray-100 overflow-hidden relative">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            target.style.display = 'none';
+                            const fallback = target.nextElementSibling as HTMLElement;
+                            if (fallback) fallback.style.display = 'flex';
+                          }}
+                        />
+                        <div className={`absolute inset-0 bg-gradient-to-r ${project.color} rounded-lg hidden items-center justify-center`}>
+                          <div className="text-white text-center">
+                            <div className="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                              <Code className="h-8 w-8" />
+                            </div>
+                            <p className="font-medium">{project.title}</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-
-                {/* Project Content */}
+                </div>                {/* Project Content */}
                 <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
                   <div className="space-y-6">
                     {/* Project Header */}
@@ -167,28 +180,6 @@ const Projects: React.FC = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* More Projects CTA */}
-          <div className="mt-16 text-center">
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8">
-              <h4 className="text-xl font-semibold text-gray-900 mb-4">
-                Want to See More?
-              </h4>
-              <p className="text-gray-600 mb-6">
-                These are just a few examples of my work. I have many more projects 
-                that showcase different aspects of my skills and expertise.
-              </p>
-              <Button
-                onClick={() => {
-                  const element = document.getElementById('contact');
-                  if (element) element.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-colors duration-300"
-              >
-                Let's Discuss Your Project
-              </Button>
-            </div>
           </div>
         </div>
       </div>

@@ -1,12 +1,12 @@
 import React from 'react';
-import { 
-  Code, 
-  Globe, 
-  ShoppingCart, 
-  Database, 
-  Zap, 
+import {
+  Code,
+  Globe,
+  ShoppingCart,
+  Database,
+  Zap,
   Layers,
-  ArrowRight 
+  ArrowRight
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -97,7 +97,7 @@ const Services: React.FC = () => {
             </h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Comprehensive frontend development services to bring your ideas to life 
+              Comprehensive frontend development services to bring your ideas to life
               with modern technologies and best practices.
             </p>
           </div>
@@ -146,28 +146,6 @@ const Services: React.FC = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Bottom CTA */}
-          <div className="text-center">
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h4 className="text-2xl font-bold text-gray-900 mb-4">
-                Need a Custom Solution?
-              </h4>
-              <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Every project is unique. Let's discuss your specific requirements and 
-                create a tailored solution that perfectly fits your needs.
-              </p>
-              <Button
-                onClick={() => {
-                  const element = document.getElementById('contact');
-                  if (element) element.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg rounded-lg transition-colors duration-300"
-              >
-                Let's Talk About Your Project
-              </Button>
-            </div>
           </div>
         </div>
       </div>

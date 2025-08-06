@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Linkedin, 
-  Github, 
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+  Github,
   Send,
   CheckCircle,
   AlertCircle
@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     try {
       await new Promise(resolve => setTimeout(resolve, 2000));
@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
             </h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Ready to start your next project? Let's discuss how I can help bring 
+              Ready to start your next project? Let's discuss how I can help bring
               your ideas to life with modern, responsive web solutions.
             </p>
           </div>
@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-8">
                 Let's Connect
               </h3>
-              
+
               <div className="space-y-6 mb-8">
                 {contactInfo.map((info, index) => (
                   <a
@@ -149,18 +149,6 @@ const Contact: React.FC = () => {
                     <Mail className="h-5 w-5" />
                   </a>
                 </div>
-              </div>
-
-              {/* Availability Status */}
-              <div className="mt-8 p-6 bg-green-50 border border-green-200 rounded-lg">
-                <div className="flex items-center mb-2">
-                  <div className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-pulse"></div>
-                  <span className="text-green-800 font-semibold">Available for New Projects</span>
-                </div>
-                <p className="text-green-700 text-sm">
-                  I'm currently accepting new freelance projects and collaborations. 
-                  Let's discuss your requirements!
-                </p>
               </div>
             </div>
 

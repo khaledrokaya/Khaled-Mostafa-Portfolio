@@ -15,47 +15,47 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           {/* Profile Image */}
-          <div className="mb-8">
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
+          <div className="mb-4">
+            <div className="w-56 h-56 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                <span className="text-4xl font-bold text-gray-800">KM</span>
+                <img src="/public/profile.jpg" alt="Profile" className="w-full h-full rounded-full object-cover" />
               </div>
             </div>
           </div>
 
           {/* Main Content */}
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
               Khaled <span className="text-blue-600">Mostafa</span>
             </h1>
-            
-            <p className="text-xl md:text-2xl text-gray-600 mb-4">
+
+            <p className="text-lg md:text-xl text-gray-600 mb-4">
               Front-End Developer | React.js & Angular
             </p>
-            
-            <div className="flex items-center justify-center text-gray-500 mb-8">
+
+            <div className="flex items-center justify-center text-gray-500 mb-4">
               <MapPin className="h-5 w-5 mr-2" />
               <span>Tanta, Al Gharbiyah, Egypt</span>
             </div>
 
-            <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-              I specialize in building responsive, modern, and scalable web applications 
-              using React, Angular, TypeScript, and Tailwind CSS. My work emphasizes 
+            <p className="text-gray-700 mb-4 max-w-2xl mx-auto leading-relaxed">
+              I specialize in building responsive, modern, and scalable web applications
+              using React, Angular, TypeScript, and Tailwind CSS. My work emphasizes
               clean code, strong user experience, and reliable performance.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-5">
               <Button
                 onClick={() => scrollToSection('projects')}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg rounded-lg transition-all duration-300 transform hover:scale-105"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
               >
                 View My Work
               </Button>
               <Button
                 onClick={() => scrollToSection('contact')}
                 variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 text-lg rounded-lg transition-all duration-300"
+                className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg transition-all duration-300"
               >
                 Get In Touch
               </Button>
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
                 <Mail className="h-6 w-6 text-gray-700" />
               </a>
               <a
-                href="https://www.linkedin.com/in/khaledmostafa-jr"
+                href="https://www.linkedin.com/in/khaled-mostafa-jr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
                 <Linkedin className="h-6 w-6 text-blue-600" />
               </a>
               <a
-                href="https://github.com/khaledmostafa-jr"
+                href="https://github.com/khaledrokaya"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"

@@ -6,6 +6,7 @@ import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
+import Education from './components/Education';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Services from './components/Services';
@@ -27,6 +28,7 @@ function App() {
               <>
                 <Hero />
                 <About />
+                <Education />
                 <Skills />
                 <Experience />
                 <Services />
@@ -37,6 +39,7 @@ function App() {
               </>
             } />
             <Route path="/about" element={<About />} />
+            <Route path="/education" element={<Education />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/services" element={<Services />} />

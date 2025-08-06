@@ -20,6 +20,7 @@ const Header: React.FC = () => {
   const navItems = [
     { name: 'Home', href: '/', section: 'hero' },
     { name: 'About', href: '#about', section: 'about' },
+    { name: 'Education', href: '#education', section: 'education' },
     { name: 'Skills', href: '#skills', section: 'skills' },
     { name: 'Experience', href: '#experience', section: 'experience' },
     { name: 'Services', href: '#services', section: 'services' },
@@ -37,11 +38,10 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'bg-white/95 backdrop-blur-sm shadow-lg'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">

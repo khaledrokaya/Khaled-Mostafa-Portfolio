@@ -42,16 +42,16 @@ const Footer: React.FC = () => {
                   Khaled<span className="text-blue-400">.</span>
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Frontend Developer specializing in React.js and Angular. 
-                  Creating modern, responsive, and scalable web applications 
+                  Frontend Developer specializing in React.js and Angular.
+                  Creating modern, responsive, and scalable web applications
                   with clean code and exceptional user experiences.
                 </p>
               </div>
-              
+
               {/* Social Links */}
               <div className="flex space-x-4">
                 <a
-                  href="https://www.linkedin.com/in/khaledmostafa-jr"
+                  href="https://www.linkedin.com/in/khaled-mostafa-jr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-gray-800 rounded-lg hover:bg-blue-600 transition-colors duration-300"
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://github.com/khaledmostafa-jr"
+                  href="https://github.com/khaledrokaya"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-300"
@@ -110,7 +110,7 @@ const Footer: React.FC = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 text-blue-400 mr-3" />
-                  <a 
+                  <a
                     href="tel:+201121370379"
                     className="text-gray-300 hover:text-blue-400 transition-colors duration-300"
                   >
@@ -119,7 +119,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-blue-400 mr-3" />
-                  <a 
+                  <a
                     href="mailto:khaled.mustafa.jr@gmail.com"
                     className="text-gray-300 hover:text-blue-400 transition-colors duration-300"
                   >
@@ -130,16 +130,6 @@ const Footer: React.FC = () => {
                   <MapPin className="h-5 w-5 text-blue-400 mr-3" />
                   <span className="text-gray-300">
                     Tanta, Al Gharbiyah, Egypt
-                  </span>
-                </div>
-              </div>
-
-              {/* Availability Badge */}
-              <div className="mt-6 p-3 bg-green-900/30 border border-green-700 rounded-lg">
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-                  <span className="text-green-400 text-sm font-medium">
-                    Available for Projects
                   </span>
                 </div>
               </div>
@@ -155,7 +145,7 @@ const Footer: React.FC = () => {
               <Heart className="h-4 w-4 text-red-500 mx-2 fill-current" />
               <span>in Egypt</span>
             </div>
-            
+
             <div className="flex items-center space-x-6 text-sm text-gray-400">
               <button
                 onClick={() => scrollToSection('hero')}
