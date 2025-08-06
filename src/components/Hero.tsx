@@ -136,7 +136,7 @@ const Hero = () => {
                   <Mail className="h-6 w-6 text-blue-400 group-hover:text-white transition-colors" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/khaledmostafa-jr"
+                  href="https://www.linkedin.com/in/khaled-mostafa-jr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group p-4 bg-white/10 backdrop-blur-sm rounded-2xl hover:bg-blue-600 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
@@ -144,7 +144,7 @@ const Hero = () => {
                   <Linkedin className="h-6 w-6 text-blue-400 group-hover:text-white transition-colors" />
                 </a>
                 <a
-                  href="https://github.com/khaledmostafa-jr"
+                  href="https://github.com/khaledrokaya"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group p-4 bg-white/10 backdrop-blur-sm rounded-2xl hover:bg-gray-800 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
