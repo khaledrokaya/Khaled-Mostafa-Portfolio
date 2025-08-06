@@ -11,14 +11,14 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-16">
+    <section id="hero" className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           {/* Profile Image */}
           <div className="mb-4">
             <div className="w-56 h-56 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                <img src="/public/profile.jpg" alt="Profile" className="w-full h-full rounded-full object-cover" />
+                <img src="/profile.jpg" alt="Profile" className="w-full h-full rounded-full object-cover" />
               </div>
             </div>
           </div>
