@@ -141,9 +141,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center text-gray-400 mb-4 md:mb-0">
-              <span>© {currentYear} Khaled Mostafa. Made with</span>
-              <Heart className="h-4 w-4 text-red-500 mx-2 fill-current" />
-              <span>in Egypt</span>
+              <span>© {currentYear} Khaled Mostafa</span> 
             </div>
 
             <div className="flex items-center space-x-6 text-sm text-gray-400">
