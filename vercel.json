@@ -1,6 +1,4 @@
 {
-  "projectId": "replace_with_your_project_id",
-  "orgId": "replace_with_your_org_id",
   "settings": {
     "framework": "vite",
     "buildCommand": "npm run build",
