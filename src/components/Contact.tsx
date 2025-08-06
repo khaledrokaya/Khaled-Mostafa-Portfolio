@@ -67,14 +67,14 @@ const Contact: React.FC = () => {
       icon: <MapPin className="h-6 w-6" />,
       label: 'Location',
       value: 'Tanta, Al Gharbiyah, Egypt',
-      href: '#',
+      href: 'https://maps.app.goo.gl/fxbVuMp9yQAtmR6T9',
       color: 'text-red-600'
     },
     {
       icon: <Linkedin className="h-6 w-6" />,
       label: 'LinkedIn',
-      value: 'khaledmostafa-jr',
-      href: 'https://www.linkedin.com/in/khaledmostafa-jr',
+      value: 'khaled-mostafa-jr',
+      href: 'https://www.linkedin.com/in/khaled-mostafa-jr',
       color: 'text-blue-700'
     }
   ];
