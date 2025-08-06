@@ -77,7 +77,7 @@ const Hero = () => {
             {/* Professional title */}
             <div className={`transform transition-all duration-1000 delay-500 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <p className="text-xl md:text-2xl text-blue-200 font-medium">
-                Front-End Developer | React.js Specialist
+                Front-End Developer | React.js & Angular Specialist
               </p>
             </div>
 
