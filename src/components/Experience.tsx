@@ -7,7 +7,7 @@ const Experience: React.FC = () => {
     position: 'Independent Frontend Developer',
     duration: 'August 2023 - Present',
     period: '2 years',
-    location: 'Remote',
+    location: 'Freelance',
     description: `As a front-end developer, I build seamless, responsive, and scalable user interfaces. I specialize in transforming ideas into clean, maintainable digital experiences using modern technologies like React and Tailwind CSS. My work emphasizes clarity, performance, and alignment with product goals, whether creating from scratch or enhancing existing systems. I balance technical structure and visual design to deliver intuitive, efficient, and long-term interfaces.`,
     achievements: [
       'Developed 15+ responsive web applications using React.js and Angular',
