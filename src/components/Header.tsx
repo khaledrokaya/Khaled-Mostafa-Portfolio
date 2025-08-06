@@ -55,8 +55,8 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-xl border-b border-gray-200/50'
-          : 'bg-transparent'
+        ? 'bg-white/95 backdrop-blur-md shadow-xl border-b border-gray-200/50'
+        : 'bg-transparent'
         }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -81,12 +81,12 @@ const Header = () => {
                 key={item.name}
                 onClick={() => scrollToSection(item.section)}
                 className={`relative px-4 py-2 rounded-xl font-medium transition-all duration-300 group ${activeSection === item.section
-                    ? isScrolled
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-blue-300 bg-white/10'
-                    : isScrolled
-                      ? 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                      : 'text-gray-300 hover:text-white hover:bg-white/10'
+                  ? isScrolled
+                    ? 'text-blue-600 bg-blue-50'
+                    : 'text-blue-300 bg-white/10'
+                  : isScrolled
+                    ? 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                    : 'text-gray-300 hover:text-white hover:bg-white/10'
                   }`}
               >
                 {item.name}
@@ -102,8 +102,8 @@ const Header = () => {
             <Button
               onClick={() => scrollToSection('contact')}
               className={`group relative overflow-hidden px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 ${isScrolled
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl'
-                  : 'bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 border border-white/20'
+                ? 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl'
+                : 'bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 border border-white/20'
                 }`}
             >
               <span className="relative z-10 flex items-center">
@@ -116,8 +116,8 @@ const Header = () => {
           {/* Enhanced Mobile Menu Button */}
           <button
             className={`lg:hidden p-2 rounded-xl transition-all duration-300 ${isScrolled
-                ? 'text-gray-900 hover:bg-gray-100'
-                : 'text-white hover:bg-white/10'
+              ? 'text-gray-900 hover:bg-gray-100'
+              : 'text-white hover:bg-white/10'
               }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -150,8 +150,8 @@ const Header = () => {
                   key={item.name}
                   onClick={() => scrollToSection(item.section)}
                   className={`block w-full text-left px-4 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 ${activeSection === item.section
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                    ? 'text-blue-600 bg-blue-50'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
                     }`}
                   style={{ animationDelay: `${index * 50}ms` }}
                 >
