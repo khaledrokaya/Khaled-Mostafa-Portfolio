@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
                 </h4>
                 <div className="flex space-x-4">
                   <a
-                    href="https://www.linkedin.com/in/khaledmostafa-jr"
+                    href="https://www.linkedin.com/in/khaled-mostafa-jr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105"
@@ -135,7 +135,7 @@ const Contact: React.FC = () => {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://github.com/khaledmostafa-jr"
+                    href="https://github.com/kahledrokaya"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors duration-300 transform hover:scale-105"
