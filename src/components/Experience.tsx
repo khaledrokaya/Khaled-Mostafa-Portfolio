@@ -3,12 +3,12 @@ import { Calendar, MapPin, Briefcase } from 'lucide-react';
 
 const Experience: React.FC = () => {
   const experience = {
-    company: 'Mostaql.com',
+    company: '',
     position: 'Independent Frontend Developer',
-    duration: 'January 2023 - Present',
-    period: '2 years 8 months',
+    duration: 'August 2023 - Present',
+    period: '2 years',
     location: 'Remote',
-    description: `As a front-end developer at Mostaql.com, I build seamless, responsive, and scalable user interfaces. I specialize in transforming ideas into clean, maintainable digital experiences using modern technologies like React and Tailwind CSS. My work emphasizes clarity, performance, and alignment with product goals, whether creating from scratch or enhancing existing systems. I balance technical structure and visual design to deliver intuitive, efficient, and long-term interfaces.`,
+    description: `As a front-end developer, I build seamless, responsive, and scalable user interfaces. I specialize in transforming ideas into clean, maintainable digital experiences using modern technologies like React and Tailwind CSS. My work emphasizes clarity, performance, and alignment with product goals, whether creating from scratch or enhancing existing systems. I balance technical structure and visual design to deliver intuitive, efficient, and long-term interfaces.`,
     achievements: [
       'Developed 15+ responsive web applications using React.js and Angular',
       'Improved application performance by 40% through code optimization',
@@ -55,9 +55,6 @@ const Experience: React.FC = () => {
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">
                       {experience.position}
                     </h3>
-                    <h4 className="text-xl text-blue-600 font-semibold mb-4">
-                      {experience.company}
-                    </h4>
 
                     {/* Meta Information */}
                     <div className="flex flex-wrap gap-4 text-gray-600 mb-4">
