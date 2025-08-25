@@ -1,6 +1,7 @@
 import React from 'react';
-import { Award, Calendar, Building, CheckCircle } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+import { Award, Calendar, Building, CheckCircle, ExternalLink } from 'lucide-react';
+import { Badge } from './ui/badge';
+import { Button } from './ui/button';
 
 const Certificates: React.FC = () => {
   const certificates = [
@@ -19,7 +20,8 @@ const Certificates: React.FC = () => {
       ],
       outcome: 'Gained strong JavaScript fundamentals essential for building interactive web applications.',
       color: 'from-yellow-500 to-orange-600',
-      icon: <Award className="h-8 w-8 text-white" />
+      icon: <Award className="h-8 w-8 text-white" />,
+      certificateUrl: 'https://drive.google.com/file/d/1cd2EOae4dJKQxynGXixqU5OsLKazWj75/view?usp=sharing'
     },
     {
       title: 'MEAN Stack Training',
@@ -36,7 +38,8 @@ const Certificates: React.FC = () => {
       ],
       outcome: 'Acquired hands-on experience building scalable full-stack web apps.',
       color: 'from-green-500 to-teal-600',
-      icon: <Award className="h-8 w-8 text-white" />
+      icon: <Award className="h-8 w-8 text-white" />,
+      certificateUrl: 'https://drive.google.com/file/d/1jzJWiDrLQhJpzCpjish5W-lvnzOCH2-b/view?usp=sharing'
     }
   ];
 
@@ -114,9 +117,27 @@ const Certificates: React.FC = () => {
                   </div>
 
                   {/* Outcome */}
-                  <div className="bg-gray-50 rounded-lg p-4">
+                  <div className="bg-gray-50 rounded-lg p-4 mb-6">
                     <h5 className="font-semibold text-gray-900 mb-2">Outcome:</h5>
                     <p className="text-gray-700 text-sm">{cert.outcome}</p>
+                  </div>
+
+                  {/* View Certificate Button */}
+                  <div className="pt-4 border-t border-gray-200">
+                    <Button
+                      asChild
+                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white transition-all duration-300 transform hover:scale-105"
+                    >
+                      <a
+                        href={cert.certificateUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        View Certificate
+                      </a>
+                    </Button>
                   </div>
                 </div>
               </div>

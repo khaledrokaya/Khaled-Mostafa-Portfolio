@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ArrowDown, Github, Linkedin, Mail, MapPin, Download, Sparkles } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from './ui/button';
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -77,7 +77,7 @@ const Hero = () => {
             {/* Professional title */}
             <div className={`transform transition-all duration-1000 delay-500 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <p className="text-xl md:text-2xl text-blue-200 font-medium">
-                Front-End Developer | React.js & Angular Specialist
+                Front-End Developer (React.js, Angular) || CS student || NTI trainee
               </p>
             </div>
 
@@ -92,9 +92,9 @@ const Hero = () => {
             {/* Description */}
             <div className={`transform transition-all duration-1000 delay-900 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-                I craft beautiful, responsive web applications with modern technologies.
-                Specializing in React, TypeScript, and creating exceptional user experiences
-                that drive business growth.
+                Building modern, responsive, and scalable web applications with focus on clean code,
+                performance, and user-centered design. Specializing in React.js, Angular, TypeScript,
+                and creating exceptional digital experiences.
               </p>
             </div>
 

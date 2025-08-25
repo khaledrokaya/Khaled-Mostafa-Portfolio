@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 
 // Components
@@ -11,16 +11,38 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Services from './components/Services';
 import Projects from './components/Projects';
-import Testimonials from './components/Testimonials';
+import ProjectsPage from './components/ProjectsPage';
 import Certificates from './components/Certificates';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
+// Component to handle hash navigation
+function ScrollToHash() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      // Remove the # from the hash
+      const elementId = location.hash.substring(1);
+      // Small delay to ensure the page has rendered
+      setTimeout(() => {
+        const element = document.getElementById(elementId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location.hash, location.pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-white">
+        <ScrollToHash />
         <Header />
         <main>
           <Routes>
@@ -33,7 +55,6 @@ function App() {
                 <Experience />
                 <Services />
                 <Projects />
-                <Testimonials />
                 <Certificates />
                 <Contact />
               </>
@@ -43,7 +64,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

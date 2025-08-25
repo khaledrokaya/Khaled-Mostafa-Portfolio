@@ -9,9 +9,10 @@ import {
   CheckCircle,
   AlertCircle
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import emailjs from '@emailjs/browser';
+import { Button } from './ui/button';
+import { Input } from './ui/input';
+import { Textarea } from './ui/textarea';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -35,12 +36,52 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      // Method 1: Try Formspree first
+      const formspreeResponse = await fetch('https://formspree.io/f/xpwzrvvd', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          _replyto: formData.email,
+        }),
+      });
+
+      if (formspreeResponse.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        // Method 2: Fallback to EmailJS
+        try {
+          const templateParams = {
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            to: 'khaled.mustafa.jr@gmail.com',
+          };
+
+          await emailjs.send(
+            'service_6z5kqgn', // Replace with your EmailJS service ID
+            'KhaledContact_gclkdtd', // Replace with your EmailJS template ID
+            templateParams,
+            'QIQJMiACtmulepzmr' // Replace with your EmailJS public key
+          );
+
+          setSubmitStatus('success');
+          setFormData({ name: '', email: '', subject: '', message: '' });
+        } catch (emailjsError) {
+          console.error('EmailJS error:', emailjsError);
+          setSubmitStatus('error');
+        }
+      }
     } catch (error) {
+      console.error('Error sending message:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -135,7 +176,7 @@ const Contact: React.FC = () => {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://github.com/kahledrokaya"
+                    href="https://github.com/khaledrokaya"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors duration-300 transform hover:scale-105"

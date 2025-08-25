@@ -46,22 +46,32 @@ const About: React.FC = () => {
 
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  I am a front-end web developer specializing in responsive, modern, and scalable
-                  web applications using React, Angular, TypeScript, and Tailwind CSS. My work
-                  emphasizes clean code, strong user experience, and reliable performance.
+                  I am a Front-End Developer with a strong background in building modern, responsive,
+                  and scalable web applications. I specialize in React.js, Angular, TypeScript, and
+                  Tailwind CSS, with a focus on clean code, performance, and user-centered design.
                 </p>
 
                 <p>
-                  I have experience developing complete systems, including e-commerce platforms,
-                  admin dashboards, and management systems. I focus on building products that are
-                  both easy to use and maintain, following best practices in design, development,
-                  and code structure for long-term quality.
+                  Over the past few years, I have developed a variety of front-end solutions, including
+                  e-commerce platforms, admin dashboards, and custom content management systems. My work
+                  is guided by best practices in architecture, accessibility, and responsive design,
+                  ensuring that each product is efficient, maintainable, and visually consistent across
+                  all devices.
                 </p>
 
                 <p>
-                  Currently pursuing my Bachelor's degree in Computer Science at Tanta University
-                  while actively working as an independent frontend developer, delivering high-quality
-                  solutions to clients worldwide.
+                  I value code readability, reusability, and long-term maintainability. I work comfortably
+                  in both independent and collaborative environments, and I am experienced in Agile workflows,
+                  version control with Git, and integration with RESTful APIs. I regularly use modern libraries
+                  and frameworks such as React Hook Form, Redux, React Query, and Material UI to enhance
+                  functionality and improve user experience.
+                </p>
+
+                <p>
+                  Currently pursuing my Bachelor's degree in Computer Science at Tanta University while
+                  actively working as a freelance frontend developer, delivering high-quality solutions
+                  to clients worldwide. I'm always looking for new challenges where I can apply my skills
+                  and grow as a developer.
                 </p>
               </div>
             </div>

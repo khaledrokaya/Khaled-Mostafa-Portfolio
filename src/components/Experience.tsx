@@ -3,19 +3,21 @@ import { Calendar, MapPin, Briefcase } from 'lucide-react';
 
 const Experience: React.FC = () => {
   const experience = {
-    company: '',
-    position: 'Independent Frontend Developer',
+    company: 'Freelance',
+    position: 'Front-End Developer | React, Angular',
     duration: 'August 2023 - Present',
-    period: '2 years',
-    location: 'Freelance',
-    description: `As a front-end developer, I build seamless, responsive, and scalable user interfaces. I specialize in transforming ideas into clean, maintainable digital experiences using modern technologies like React and Tailwind CSS. My work emphasizes clarity, performance, and alignment with product goals, whether creating from scratch or enhancing existing systems. I balance technical structure and visual design to deliver intuitive, efficient, and long-term interfaces.`,
+    period: '2 years 1 month',
+    location: 'Tanta, Al Gharbiyah, Egypt',
+    description: `I'm a front-end developer focused on building seamless, responsive, and scalable user interfaces. I specialize in transforming ideas into clean, maintainable digital experiences using modern technologies like React, Next.js, and Tailwind CSS. My work emphasizes clarity, performance, and alignment with product goals whether creating from scratch or enhancing existing systems. I approach each project with a balance of technical structure and visual design, aiming to deliver interfaces that feel intuitive, efficient, and built for the long term.`,
     achievements: [
       'Developed 15+ responsive web applications using React.js and Angular',
-      'Improved application performance by 40% through code optimization',
-      'Collaborated with cross-functional teams to deliver projects on time',
-      'Implemented modern UI/UX designs with pixel-perfect precision',
-      'Maintained 98% client satisfaction rate across all projects',
-      'Built reusable component libraries for faster development cycles'
+      'Improved application performance by 40% through code optimization and best practices',
+      'Collaborated with cross-functional teams using Agile workflows and Git version control',
+      'Implemented modern UI/UX designs with pixel-perfect precision and attention to detail',
+      'Maintained 98% client satisfaction rate across all freelance projects',
+      'Built reusable component libraries and design systems for faster development cycles',
+      'Integrated RESTful APIs and modern state management solutions (Redux, React Query)',
+      'Delivered projects consistently on time while maintaining high code quality standards'
     ]
   };
 

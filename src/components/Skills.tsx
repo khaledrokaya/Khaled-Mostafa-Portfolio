@@ -1,29 +1,43 @@
 import React from 'react';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from './ui/badge';
 
 const Skills: React.FC = () => {
   const technicalSkills = [
     { name: 'React.js', level: 'Advanced', color: 'bg-blue-100 text-blue-800' },
-    { name: 'Angular', level: 'Basics', color: 'bg-red-100 text-red-800' },
+    { name: 'Angular', level: 'Intermediate', color: 'bg-red-100 text-red-800' },
     { name: 'TypeScript', level: 'Advanced', color: 'bg-blue-100 text-blue-800' },
     { name: 'JavaScript (ES6+)', level: 'Expert', color: 'bg-yellow-100 text-yellow-800' },
-    { name: 'Tailwind CSS', level: 'Expert', color: 'bg-cyan-100 text-cyan-800' },
-    { name: 'CSS3', level: 'Expert', color: 'bg-blue-100 text-blue-800' },
+    { name: 'Node.js', level: 'Intermediate', color: 'bg-green-100 text-green-800' },
+    { name: 'Express.js', level: 'Intermediate', color: 'bg-gray-100 text-gray-800' },
+    { name: 'MongoDB', level: 'Intermediate', color: 'bg-green-100 text-green-800' },
     { name: 'HTML5', level: 'Expert', color: 'bg-orange-100 text-orange-800' },
+    { name: 'CSS3', level: 'Expert', color: 'bg-blue-100 text-blue-800' },
+    { name: 'Tailwind CSS', level: 'Expert', color: 'bg-cyan-100 text-cyan-800' },
+    { name: 'SCSS', level: 'Advanced', color: 'bg-pink-100 text-pink-800' },
+    { name: 'Material UI', level: 'Advanced', color: 'bg-blue-100 text-blue-800' },
+    { name: 'Bootstrap', level: 'Advanced', color: 'bg-purple-100 text-purple-800' },
     { name: 'Git & GitHub', level: 'Advanced', color: 'bg-gray-100 text-gray-800' },
     { name: 'RESTful APIs', level: 'Advanced', color: 'bg-green-100 text-green-800' },
-    { name: 'Axios', level: 'Advanced', color: 'bg-purple-100 text-purple-800' },
+    { name: 'React Hook Form', level: 'Advanced', color: 'bg-blue-100 text-blue-800' },
+    { name: 'Redux', level: 'Intermediate', color: 'bg-purple-100 text-purple-800' },
+    { name: 'React Query', level: 'Intermediate', color: 'bg-red-100 text-red-800' },
+    { name: 'Responsive Design', level: 'Expert', color: 'bg-green-100 text-green-800' },
+    { name: 'SPA Development', level: 'Advanced', color: 'bg-orange-100 text-orange-800' },
   ];
 
   const softSkills = [
-    'Strong Communication with Clients & Teams',
-    'Problem Solving',
-    'Adaptability to New Tools',
-    'Attention to UI/UX Details',
-    'Time Management',
-    'Critical Thinking',
-    'Team Collaboration',
+    'UI/UX Principles & Design',
+    'Code Quality & Best Practices',
+    'Performance Optimization',
+    'Problem Solving & Debugging',
+    'Agile Workflows & Collaboration',
     'Project Management',
+    'Client Communication',
+    'Version Control with Git',
+    'Cross-browser Compatibility',
+    'Accessibility (a11y) Standards',
+    'SEO Best Practices',
+    'Technical Documentation',
   ];
 
   return (
@@ -67,9 +81,9 @@ const Skills: React.FC = () => {
                           ? 'bg-blue-600 w-full'
                           : skill.level === 'Advanced'
                             ? 'bg-blue-500 w-4/5'
-                            : skill.level === 'Basics'
-                              ? 'bg-blue-400 w-2/5'
-                              : 'bg-blue-400 w-3/5'
+                            : skill.level === 'Intermediate'
+                              ? 'bg-blue-400 w-3/5'
+                              : 'bg-blue-300 w-2/5'
                           }`}
                       ></div>
                     </div>
