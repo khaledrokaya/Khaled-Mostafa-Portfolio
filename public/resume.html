@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khaled Mostafa - Resume</title>
+
+  <!-- Favicon configuration -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/image.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/image.png">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .pdf-container {
+      width: 100%;
+      height: calc(100vh - 80px);
+      border: none;
+    }
+
+    .download-btn {
+      background: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Khaled Mostafa - Resume</h1>
+    <a href="/resume.pdf" download="Khaled_Mostafa_Resume.pdf" class="download-btn">📥 Download PDF</a>
+    <a href="/" class="download-btn">🏠 Back to Portfolio</a>
+  </div>
+  <iframe src="/resume.pdf" class="pdf-container" title="Khaled Mostafa Resume"></iframe>
+</body>
+
+</html>

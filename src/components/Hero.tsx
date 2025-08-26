@@ -116,7 +116,7 @@ const Hero = () => {
                   Get In Touch
                 </Button>
                 <Button
-                  onClick={() => window.open('/resume.pdf', '_blank')}
+                  onClick={() => window.open('/resume.html', '_blank')}
                   variant="outline"
                   className="border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
                 >
