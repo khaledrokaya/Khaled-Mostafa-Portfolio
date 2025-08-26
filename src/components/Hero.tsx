@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowDown, Github, Linkedin, Mail, MapPin, Download, Sparkles } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, MapPin, Download } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Hero = () => {
